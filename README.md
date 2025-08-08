@@ -1,1 +1,0 @@
-# StereoMorph-CheckEM-example
