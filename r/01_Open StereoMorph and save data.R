@@ -54,7 +54,7 @@ shapes <- readShapes(file = "H7_Shapes_3D")
 landmarks <- shapes$landmarks # 3D array: landmark x coords x image
 
 # Read landmark pairs from file ----
-landmark_pairs <- read.csv("landmarks2.txt", header = FALSE, stringsAsFactors = FALSE)
+landmark_pairs <- read.csv("data/raw/landmarks2.txt", header = FALSE, stringsAsFactors = FALSE)
 colnames(landmark_pairs) <- c("landmark1", "landmark2")
 
 # Run the function to calculate distances for each image and pair of landmarks----
@@ -65,11 +65,11 @@ lengths_df <- na.omit(lengths_df) %>%
   glimpse()
 
 # Load metadata linking image name to species
-metadata <- read.xlsx("species.xlsx")
+metadata <- read.xlsx("data/raw/species.xlsx")
 
 # Merge with the fish length estimates
 fishdf <- merge(lengths_df, metadata, by = "image", all.x = TRUE) %>%
   glimpse()
 
 # Save final dataset ----
-write.xlsx(fishdf, "fish_data.xlsx")
+write.xlsx(fishdf, "data/tidy/fish_data.xlsx")
