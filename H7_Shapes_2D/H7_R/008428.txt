@@ -1,0 +1,10 @@
+<shapes type=list>
+	<scaling type=logical names=FALSE length=1 as.numeric=FALSE >NA</scaling>
+	<landmarks.pixel type=matrix rownames=TRUE colnames=FALSE nrow=4 ncol=2 as.numeric=TRUE >
+		CFP_1	856	720
+		HT_1	742	730
+		CFP_2	1388	754
+		HT_2	1281	770
+	</landmarks.pixel>
+</shapes>
+

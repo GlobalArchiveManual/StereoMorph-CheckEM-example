@@ -1,0 +1,11 @@
+<shapes type=list>
+	<landmarks type=matrix rownames=TRUE colnames=FALSE nrow=4 ncol=3 as.numeric=TRUE >
+		CFP_1	-219.236878370693	-121.38811023116	654.155371945182
+		CFP_2	-74.7552208808618	-102.906931275749	822.410841834954
+		HT_1	-163.532233386034	-154.528870115428	622.100548654727
+		HT_2	4.27884559149663	-110.832615118193	773.328960666458
+	</landmarks>
+	<curves type=list>
+	</curves>
+</shapes>
+
