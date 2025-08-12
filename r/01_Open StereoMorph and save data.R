@@ -72,10 +72,10 @@ fish_metadata <- read.xlsx("data/raw/species.xlsx") %>%
   dplyr::glimpse()
 
 sample_metadata <- tibble::tibble(
-  opcode = "Deployment1",
+  opcode = c("Deployment1", "Deployment2"),
   date_time = "2022-12-12T10:00:00-07:00",
-  latitude_dd = 24.250865,
-  longitude_dd = -110.151576,
+  latitude_dd = c(24.250865, 24.25),
+  longitude_dd = c(-110.151576, -110.15),
   depth_m = 2,
   status = "Fished",
   observer_count = "Alberto Garcia Baciero",
@@ -119,6 +119,6 @@ length <- fishdf %>%
 # Save final data ----
 campaignid <- "2022-12_Baha_stereoRUVs"
 
-write_csv(sample_metadata, paste0("data/tidy/", campaignid, "_metadata.csv"))
-write_csv(count, paste0("data/tidy/", campaignid, "_count.csv"))
-write_csv(length, paste0("data/tidy/", campaignid, "_length.csv"))
+write_csv(sample_metadata, paste0("data/tidy/", campaignid, "_Metadata.csv"))
+write_csv(count, paste0("data/tidy/", campaignid, "_Count.csv"))
+write_csv(length, paste0("data/tidy/", campaignid, "_Length.csv"))
