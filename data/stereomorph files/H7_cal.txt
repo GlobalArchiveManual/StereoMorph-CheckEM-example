@@ -1,0 +1,148 @@
+<calibration type=list>
+	<img.type type=vector names=FALSE length=1 as.numeric=FALSE >video</img.type>
+	<img.size type=matrix rownames=TRUE colnames=TRUE nrow=2 ncol=2 as.numeric=TRUE >
+			w	h
+		H7_L	1920	1080
+		H7_R	1920	1080
+	</img.size>
+	<img.fpaths type=vector names=FALSE length=2 as.numeric=FALSE >
+		cal/H7_L.mp4
+		cal/H7_R.mp4
+	</img.fpaths>
+	<img.sub.dir type=vector names=FALSE length=2 as.numeric=FALSE >
+		H7_L
+		H7_R
+	</img.sub.dir>
+	<img.list.files type=vector names=FALSE length=2 as.numeric=FALSE >
+		H7_L.mp4
+		H7_R.mp4
+	</img.list.files>
+	<min.views type=vector names=FALSE length=1 as.numeric=TRUE >2</min.views>
+	<vid.fnames type=vector names=TRUE length=2 as.numeric=FALSE >
+
+		H7_L	H7_R
+		H7_L.mp4
+		H7_R.mp4
+	</vid.fnames>
+	<vid.fps type=vector names=FALSE length=2 as.numeric=TRUE >
+		30
+		30
+	</vid.fps>
+	<vid.nframes type=vector names=FALSE length=2 as.numeric=TRUE >
+		7712
+		7712
+	</vid.nframes>
+	<vid.duration type=vector names=FALSE length=2 as.numeric=TRUE >
+		257.05
+		257.05
+	</vid.duration>
+	<img.dir type=vector names=FALSE length=1 as.numeric=FALSE >cal</img.dir>
+	<sq.size type=vector names=FALSE length=1 as.numeric=FALSE >52.45 mm</sq.size>
+	<nx type=vector names=FALSE length=1 as.numeric=TRUE >9</nx>
+	<ny type=vector names=FALSE length=1 as.numeric=TRUE >6</ny>
+	<corner.dir type=vector names=FALSE length=1 as.numeric=FALSE >H7_Corners</corner.dir>
+	<flip.view type=logical names=FALSE length=1 as.numeric=FALSE >FALSE</flip.view>
+	<verify.dir type=vector names=FALSE length=1 as.numeric=FALSE >H7_Verify</verify.dir>
+	<cal.set.num type=vector names=FALSE length=1 as.numeric=TRUE >4</cal.set.num>
+	<cal.coeff type=matrix rownames=FALSE colnames=TRUE nrow=11 ncol=2 as.numeric=TRUE >
+		H7_L	H7_R
+		1.06971465946145	1.06016779119284
+		-0.123684836160461	-0.0978047509986268
+		0.471283241584729	0.574914366598335
+		1465.45883296244	848.036574943117
+		0.0674500817490653	0.0823713809402022
+		-0.982609655960005	-0.962785552993211
+		0.39462411682419	0.348145233612712
+		508.982985995026	504.904275242585
+		0.000185218117254998	0.000176841857867163
+		-0.000106973252001165	-0.000115746065675101
+		0.000798024734174563	0.000752013670687446
+	</cal.coeff>
+	<mean.reconstruct.rmse type=vector names=FALSE length=1 as.numeric=TRUE >0.840394489240694</mean.reconstruct.rmse>
+	<coefficient.rmse type=vector names=FALSE length=2 as.numeric=TRUE >
+		1.70318236947496
+		1.41903652942648
+	</coefficient.rmse>
+	<cal.sample.aspects type=vector names=FALSE length=8 as.numeric=FALSE >
+		000312
+		001558
+		002181
+		002336
+		003660
+		004283
+		004750
+		007163
+	</cal.sample.aspects>
+	<cal.ipd.rmse type=vector names=TRUE length=28 as.numeric=TRUE >
+
+		000235	000546	001013	001169	001480	001636	001792	001947	002103	002259	002414	002648	002804	002959	003193	003426	003582	003893	004049	004205	004438	004672	004983	006307	006696	007085	007241	007474
+		6.16266232587069
+		4.93935111322895
+		4.90427238757081
+		12.6335789712517
+		3.60712788473576
+		2.11601927598464
+		6.31647694621449
+		4.6208541418504
+		11.5170894694793
+		3.9383249477324
+		7.53353283391535
+		3.64020359721402
+		9.6909955321153
+		9.16292042689232
+		4.9733435059664
+		10.3086204317126
+		11.1585820951842
+		3.70709588500194
+		8.51102542302971
+		3.73347892825894
+		8.68500507359478
+		9.69494645479075
+		3.36702151890581
+		5.70776950256159
+		7.54949971894482
+		4.37666846501737
+		3.98841085750006
+		6.33657068592509
+	</cal.ipd.rmse>
+	<cal.ipd.abs.mean type=vector names=FALSE length=1 as.numeric=TRUE >5.2693795759147</cal.ipd.abs.mean>
+	<cal.ipd.abs.max type=vector names=FALSE length=1 as.numeric=TRUE >29.3190162724529</cal.ipd.abs.max>
+	<cal.ipd.abs.sd type=vector names=FALSE length=1 as.numeric=TRUE >4.80098254910276</cal.ipd.abs.sd>
+	<cal.ipd.mean type=vector names=FALSE length=1 as.numeric=TRUE >-2.01031962224027</cal.ipd.mean>
+	<cal.ee.rms type=vector names=TRUE length=28 as.numeric=TRUE >
+
+		000235	000546	001013	001169	001480	001636	001792	001947	002103	002259	002414	002648	002804	002959	003193	003426	003582	003893	004049	004205	004438	004672	004983	006307	006696	007085	007241	007474
+		3.72485495568537
+		2.20627079530373
+		1.92427393126103
+		2.7276460938464
+		1.58159665534824
+		1.59114080406577
+		1.26016466323581
+		1.31169389281536
+		2.84548351158021
+		0.974814930112969
+		0.694907471110717
+		1.62435359569896
+		1.25167619158215
+		2.74204333491479
+		1.36752306141312
+		0.807954009328606
+		1.70155606585451
+		1.61046163323916
+		2.37182471867338
+		0.530856073797798
+		0.27610250021215
+		2.05087677215445
+		3.73614162460316
+		0.57227838993259
+		0.644725939488345
+		1.84630236766898
+		3.29189583536402
+		4.21491411568498
+	</cal.ee.rms>
+	<cal.ee.mean type=vector names=FALSE length=1 as.numeric=TRUE >1.83872621192774</cal.ee.mean>
+	<cal.ee.max type=vector names=FALSE length=1 as.numeric=TRUE >13.3993451153487</cal.ee.max>
+	<cal.ee.sd type=vector names=FALSE length=1 as.numeric=TRUE >1.57037706339073</cal.ee.sd>
+</calibration>
+
