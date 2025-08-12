@@ -1,0 +1,2 @@
+opcode,date_time,latitude_dd,longitude_dd,depth_m,status,observer_count,observer_length,successful_count,successful_length,site,location
+Deployment1,2022-12-12T10:00:00-07:00,24.250865,-110.151576,2,Fished,Alberto Garcia Baciero,Alberto Garcia Baciero,Yes,Yes,Baja California Sur,Mexico
