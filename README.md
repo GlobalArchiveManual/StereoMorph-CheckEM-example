@@ -5,9 +5,9 @@ There is not a defined format for the output file, it is up to the user to defin
 Here, we put forward a workflow to use StereoMorph with the CheckEM shiny app.
 
 # Instructions
-1. In the r folder, there is a R script named 01_Open StereoMorph and save data.R
+1. In the r folder, there is a R script named 01_Open StereoMorph and save data.R, open the script in R.
 2. Follow the instructions in the script to launch StereoMorph using the example imagery.
-3. Annotate imagery.
+3. Annotate imagery using StereoMorph.
 4. Follow the instructions in the script to save data into a format ready to use by CheckEM
 5. Upload to CheckEM
 
