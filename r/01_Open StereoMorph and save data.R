@@ -34,13 +34,10 @@ estimate_lengths <- function(landmarks_array, pairs_df) {
   return(results)
 }
 
-# TODO ask alberto for the H7_cal.txt
-# TODO check that the shiny app works properly
-
 # Launch the digitizing application to select the landmarks ----
 digitizeImages(image.file='data/stereomorph files/H7_Images', 
                shapes.file='data/stereomorph files/H7_Shapes_2D', 
-               landmarks.ref='data/raw/landmarks.txt', 
+               landmarks.ref='data/raw/landmarks2.txt', 
                cal.file='data/stereomorph files/H7_cal.txt')
 
 # Reconstruct all digitized landmarks in Shapes 2D folder ----
@@ -66,8 +63,6 @@ lengths_df <- na.omit(lengths_df) %>%
   dplyr::glimpse()
 
 # Load metadata linking image name to species ----
-# TODO will need to move species names into count/length data frame
-# TODO add text for adding in CheckEM metadata names
 fish_metadata <- read.xlsx("data/raw/species.xlsx") %>%
   dplyr::glimpse()
 
@@ -97,7 +92,7 @@ fishdf <- merge(lengths_df, fish_metadata, by = "image", all.x = TRUE) %>%
                                                      "troscheli" = "troschelii"))) %>% # Fix spelling mistakes in annotation
   dplyr::left_join(CheckEM::global_life_history) %>% # Join with life history information to get the Family name
   dplyr::select(image, opcode, length_mm, family, genus, species) %>%
-  glimpse()
+  dplyr::glimpse()
 
 # Create count data frame (the MaxN per species) ----
 count <- fishdf %>%
@@ -107,14 +102,14 @@ count <- fishdf %>%
   dplyr::ungroup() %>%
   dplyr::group_by(opcode, family, genus, species) %>%
   dplyr::slice(which.max(count)) %>%
-  ungroup() %>%
-  # dplyr::select(-image) %>%
-  glimpse()
+  dplyr::ungroup() %>%
+  dplyr::glimpse()
 
 # Create a length data frame ----
 length <- fishdf %>%
+  dplyr::semi_join(count) %>% # choose only the length measurements that are at MaxN
   dplyr::mutate(count = 1) %>%
-  semi_join()# choose only the length measurements that are at MaxN
+  dplyr::glimpse()
 
 # Save final data ----
 campaignid <- "2022-12_Baha_stereoRUVs"
