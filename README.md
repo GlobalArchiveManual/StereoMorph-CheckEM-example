@@ -14,7 +14,7 @@ Here, we put forward a workflow to use StereoMorph with the CheckEM shiny app.
 # Acknowledgements
 We would like to thank Alberto Garcia Baciero for providing example imagery, R scripts, and landmarks.
 
-# Data Reference
+# The data used in this workflow is from the following paper:
 García-Baciero, A., Robalino-Mejía, C., Peñaherrera-Palma, C. et al. Comparing the performance of two scientific tools for obtaining fish length measurements. Mar Biol 172, 125 (2025). https://doi.org/10.1007/s00227-025-04682-9
 
 # For more explanation on the methods used please see this paper:
